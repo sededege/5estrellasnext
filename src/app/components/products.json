@@ -1,0 +1,236 @@
+[
+  {
+    "id": 1111,
+    "title": "Paño de piso Extra grande 70 x 55 cm",
+    "img": "/assets/img/extragrande.png",
+    "descripcion": "Paño de piso calidad premium de clásico tejido de nido de abeja. Súper absorbente y fácil de escurrir.",
+    "medidas": "70 cm x 55 cm",
+    "material": "100% algodón vírgen blanco.",
+    "cat": "Paños de Piso",
+    "cod": "7730992600188"
+  },
+  {
+    "id": 1,
+    "title": "Paño de piso Gigante 65 x 55 cm",
+    "img": "/assets/img/gigante.jpg",
+    "descripcion": "Paño de piso calidad premium de clásico tejido de nido de abeja. Súper absorbente y fácil de escurrir.",
+    "medidas": "65 cm x 55 cm",
+    "material": "100% algodón vírgen blanco.",
+    "cat": "Paños de Piso",
+    "cod": "7730992600188"
+  },
+  {
+    "id": 2,
+    "title": "Rejilla Grande 40 x 32 cm",
+    "img": "/assets/img/rejillagrande.jpg",
+    "descripcion": "Rejilla de calidad premium de clásico tejido de nido de abeja. Súper absorbente y fácil de escurrir.",
+    "medidas": "40 cm x 32 cm",
+    "material": "100% algodón vírgen blanco.",
+    "cat": "Paños de Piso",
+    "cod": "7730992600188"
+  },
+  {
+    "id": 3,
+    "title": "Paño Económico 50 x 48",
+    "img": "/assets/img/economico.jpg",
+    "descripcion": "Paño de piso calidad premium de clásico tejido de nido de abeja. Súper absorbente y fácil de escurrir.",
+    "medidas": "50 cm x 48 cm",
+    "material": "100% algodón vírgen blanco.",
+    "cat": "Paños de Piso",
+    "cod": "7730992600188"
+  },
+  {
+    "id": 4,
+    "title": "Paño Rejilla Chica 32 x 32",
+    "img": "/assets/img/rejillachica.jpg",
+    "descripcion": "Rejilla de calidad premium de clásico tejido de nido de abeja. Súper absorbente y fácil de escurrir.",
+    "medidas": "32 cm x 32 cm",
+    "material": "100% algodón vírgen blanco.",
+    "cat": "Paños de Piso",
+    "cod": "7730992600188"
+  },
+  {
+    "id": 5,
+    "title": "Paño Mediano 50 x 55",
+    "img": "/assets/img/mediano.jpg",
+    "descripcion": "Paño de piso calidad premium de clásico tejido de nido de abeja. Súper absorbente y fácil de escurrir.",
+    "medidas": "50 cm x 55 cm",
+    "material": "100% algodón vírgen blanco.",
+    "cat": "Paños de Piso",
+    "cod": "7730992600188"
+  },
+  {
+    "id": 6,
+    "title": "Bolsa de Residuo Plana 50x55 cm x10 unidades",
+    "img": "/assets/img/bolsax10.jpg",
+    "descripcion": "Especialmente indicadas para recipientes chicos, tales como las papeleras de escritorios.",
+    "medidas": "50 cm x 55 cm",
+    "material": "Material resistente 100% virgen, de 14 micrones.",
+    "cat": "Bolsas de residuo",
+    "cod": "7730992600188"
+  },
+  {
+    "id": 7,
+    "title": "Bolsa de Residuo Plana 50x55 x30 unidades",
+    "img": "/assets/img/bolsax30.png",
+    "descripcion": "Especialmente indicadas para recipientes chicos, tales como las papeleras de escritorios.",
+    "medidas": "50 cm x 55 cm",
+    "material": "Material resistente 100% virgen, de 14 micrones.",
+    "cat": "Bolsas de residuo",
+    "cod": "7730992600096"
+  },
+  {
+    "id": 8,
+    "title": "Bolsa de Residuo Plana 100x70 cm x10 unidades",
+    "img": "/assets/img/bolsax70.png",
+    "medidas": "70 cm x 100 cm",
+    "material": "Material resistente 100% virgen, de 18 micrones.",
+    "descripcion": "Especialmente indicadas para recipientes con una capacidad de 60-70 litros",
+    "cat": "Bolsas de residuo",
+    "cod": "7730992600096"
+  },
+  {
+    "id": 9,
+    "title": "Bolsa de Residuo Plana 100x100 cm x10 unidades",
+    "img": "/assets/img/bolsax100.png",
+    "medidas": "100 cm x 100 cm",
+    "material": "Material resistente 100% virgen, de 50 micrones.",
+    "descripcion": "Gran calidad y resistencia.",
+    "cat": "Bolsas de residuo",
+    "cod": "7730992600096"
+  },
+  {
+    "id": 10,
+    "title": "Bolsa en Rollo + Fuerte 50x55 cm x30 unidades",
+    "img": "/assets/img/rollox30.png",
+    "medidas": "50 cm x 55 cm",
+    "descripcion": "Especialmente indicadas para recipientes chicos, tales como las papeleras de escritorios.",
+    "material": "Material resistente 100% virgen, de 14 micrones",
+    "cat": "Bolsas de residuo",
+    "cod": "7730992600096"
+  },
+  {
+    "id": 11,
+    "title": "Bolsa en Rollo + Fuerte 50x55 cm x64 unidades",
+    "img": "/assets/img/rollox64.png",
+    "medidas": "50 cm x 55 cm",
+    "descripcion": "Especialmente indicadas para recipientes chicos, tales como las papeleras de escritorios.",
+    "material": "Material resistente 100% virgen, de 18 micrones",
+    "cat": "Bolsas de residuo",
+    "cod": "7730992600096"
+  },
+  {
+    "id": 12,
+    "title": "Bolsa en Rollo + Fuerte 50x55 cm x10 unidades",
+    "img": "/assets/img/rollox10.png",
+    "descripcion": "Material resistente 100% virgen, de 14 microneshicos, tales como las papeleras de escritorios.",
+    "material": "Material resistente 100% virgen, de 14 micrones.",
+    "cat": "Bolsas de residuo",
+    "cod": "7730992600096"
+  },
+  {
+    "id": 13,
+    "title": "Bolsa en Rollo + Fuerte 100x70 cm x10 unidades",
+    "img": "/assets/img/rollox70.png",
+    "medidas": "70 cm x 100 cm",
+    "material": "Material resistente 100% virgen, de 24 micrones.",
+    "descripcion": "Especialmente indicadas para recipientes con una capacidad de 60-70 litros.",
+    "cat": "Bolsas de residuo",
+    "cod": "7730992600096"
+  },
+
+  {
+    "id": 33,
+    "title": "Lampazo 23 cm",
+    "img": "/assets/img/lampazo23.png",
+    "medidas": "23 cm",
+    "material": "Goma resistente 100% virgen.",
+    "descripcion": "Venta con o sin cabo",
+    "cat": "Lampazos",
+    "cod": "7730992600096"
+  },
+
+  {
+    "id": 15,
+    "title": "Lampazo de 35 cm",
+    "img": "/assets/img/lampazo35.png",
+    "medidas": "35 cm",
+    "material": "Goma resistente 100% virgen.",
+    "descripcion": "Venta con o sin cabo",
+    "cat": "Lampazos",
+    "cod": "7730992600096"
+  },
+  {
+    "id": 16,
+    "title": "Lampazo 35 Reforzado",
+    "img": "/assets/img/reforzado35.png",
+    "medidas": "35 cm",
+    "material": "Goma resistente 100% virgen.",
+    "descripcion": "Venta con o sin cabo",
+    "cat": "Lampazos",
+    "cod": "7730992600096"
+  },
+  {
+    "id": 14,
+    "title": "Lampazo 42 cm",
+    "img": "/assets/img/lampazo42.png",
+    "medidas": "42 cm",
+    "material": "Goma resistente 100% virgen.",
+    "descripcion": "Venta con o sin cabo",
+    "cat": "Lampazos",
+    "cod": "7730992600096"
+  },
+  {
+    "id": 17,
+    "title": "Lampazo 50 cm",
+    "img": "/assets/img/lampazo50.png",
+    "medidas": "50 cm",
+    "material": "Goma resistente 100% virgen.",
+    "descripcion": "Venta con o sin cabo",
+    "cat": "Lampazos",
+    "cod": "7730992600096"
+  },
+
+  {
+    "id": 18,
+    "title": "Franela Grande 38x50 cm",
+    "img": "/assets/img/franelagrande.jpg",
+    "medidas": "38 x 50 cm",
+    "material": "100% algodón.",
+    "descripcion": "Máxima absorción y durabilidad. Limpia y lustra todas las superficies por su suave composición de algodón",
+    "cat": "Franelas",
+    "cod": "7730992600096"
+  },
+  {
+    "id": 19,
+    "title": "Franela Chica 32 x 32 cm",
+    "img": "/assets/img/franelachica.jpg",
+    "medidas": "32 x 32 cm",
+    "material": "100% algodón.",
+    "descripcion": "Máxima absorción y durabilidad. Limpia y lustra todas las superficies por su suave composición de algodón",
+    "cat": "Franelas",
+    "cod": "7730992600096"
+  },
+
+  {
+    "id": 21,
+    "title": "Sopapa Nro 3 con Cabo",
+    "img": "/assets/img/sopapa.jpg",
+    "Descripcion": " tu aliado infalible para una limpieza de suelos sin esfuerzo. Con unas generosas dimensiones de 50 x 65 cm, ha sido diseñado para abordar tareas extensas de limpieza en menos tiempo. Elaborado con materia prima avanzada, absorbe de manera eficiente y atrapa la suciedad de forma efectiva, todo sin dañar tus pisos. ",
+    "cat": "Sopapas"
+  },
+  {
+    "id": 22,
+    "title": "Sopapa Nro 4 con Cabo",
+    "img": "/assets/img/sopapa.jpg",
+    "Descripcion": " tu aliado infalible para una limpieza de suelos sin esfuerzo. Con unas generosas dimensiones de 50 x 65 cm, ha sido diseñado para abordar tareas extensas de limpieza en menos tiempo. Elaborado con materia prima avanzada, absorbe de manera eficiente y atrapa la suciedad de forma efectiva, todo sin dañar tus pisos. ",
+    "cat": "Sopapas"
+  },
+  {
+    "id": 23,
+    "title": "Sopapa Nro 5 con Cabo",
+    "img": "/assets/img/sopapa.jpg",
+    "Descripcion": " tu aliado infalible para una limpieza de suelos sin esfuerzo. Con unas generosas dimensiones de 50 x 65 cm, ha sido diseñado para abordar tareas extensas de limpieza en menos tiempo. Elaborado con materia prima avanzada, absorbe de manera eficiente y atrapa la suciedad de forma efectiva, todo sin dañar tus pisos. ",
+    "cat": "Sopapas"
+  }
+]
