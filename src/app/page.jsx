@@ -16,12 +16,12 @@ import Products from "./components/products";
 import Image from 'next/image'
 import { useState } from "react";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
-import SiteMap from "./sitemap.xml";
 
 const Page = () => {
   const products = require("./components/products.json");
 
   const [products2, setProducts2] = useState(products);
+  const [search, setSearch] = useState("");
   const [price, setPrice] = useState();
   const [select, setSelect] = useState();
   const [modal, setModal] = useState(false);
@@ -230,8 +230,7 @@ const Page = () => {
   return (
     <div className="flex flex-col md:px-40 2xl:px-60 px-4 ">
             <FloatingWhatsApp placeholder='Ingresa un mensaje' chatMessage='Hola! ¿En que podemos ayudarte?' statusMessage='Habitualmente responde en 15 minutos.' avatar='./logoblanco.png' accountName="5 Estrellas" phoneNumber="+59898412760"/>
-            
-<SiteMap/>
+   
       {/*     <div className="md:px-[400px]">
         <ul className="flex gap-4  ">
           {banners &&
@@ -250,7 +249,7 @@ const Page = () => {
             ))}
         </ul>
       </div> */}
-
+ 
       <div className=" md:flex w-full items-center bg-pike2 rounded-t-lg justify-between ">
         <div className="w-full flex justify-between items-center">
           <div
@@ -270,9 +269,16 @@ const Page = () => {
           <input
             className="w-[300px] p-2 bg-white rounded-l-md text-center shadow-md"
             type="text"
-            placeholder="Qué estas buscando?"
+            value={search}
+            onChange={e => {
+              setSearch(e.target.value)
+              setProducts2(products.filter((a) => a.title.toLowerCase().includes(e.target.value.toLowerCase())))}
+            }
+              placeholder="Qué estas buscando?"
           />
-          <AiOutlineSearch className="bg-pike2 text-[2.5rem] p-1 text-pike3 rounded-r-md cursor-pointer" />
+          
+          <AiOutlineSearch className="bg-gray-200  text-[2.5rem] p-1 text-gray-400 rounded-r-md cursor-pointer" />
+        
         </div>
       </div>
 
