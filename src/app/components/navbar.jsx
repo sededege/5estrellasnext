@@ -9,6 +9,7 @@ import { useCallback, useState, useEffect } from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
+
 const Header = () => {
   const [menu, setMenu] = useState("Inicio");
   const [menuopen, setMenuopen] = useState(false);
@@ -16,22 +17,7 @@ const Header = () => {
   const pathname = usePathname()
 
 
-  const showCart = () => {
-    dispatch({
-      type: actionType.SET_CART_SHOW,
-      cartShow: !cartShow,
-    });
-  };
-
-  const [scroll, setY] = useState(window.scrollY);
-
-  const handleNavigation = useCallback(
-    (e) => {
-      const window = e.currentTarget;
-      setY(window.scrollY);
-    },
-    [scroll]
-  );
+  
 
   const menunav = [
     {
@@ -67,6 +53,7 @@ const Header = () => {
           <ul className="flex flex-col gap-4 text-right text-pike2 cursor-pointer w-full h-full  items-center justify-center ">
             {menunav.map((a) => (
               <Link
+              key={a.name}
                 className={`${
                   pathname === a.path
                     ? "text-pike font-bold"
@@ -82,6 +69,17 @@ const Header = () => {
     );
   };
 
+
+  const [scroll, setY] = useState(0);
+
+  const handleNavigation = useCallback(
+    (e) => {
+      const window = e.currentTarget;
+      setY(window.scrollY);
+    },
+    []
+  );
+
   useEffect(() => {
     setY(window.scrollY);
     window.addEventListener("scroll", handleNavigation);
@@ -91,25 +89,6 @@ const Header = () => {
     };
   }, [handleNavigation]);
 
-  const scrollTo = () => {};
-
-  const navegar = (a) => {
-    setMenu(a);
-    setMenuopen(false);
-
-    if (a === "Inicio") {
-      navigate("/", { state: "inicio" });
-    }
-    if (a === "Catálogo") {
-      navigate("/catalogo", { state: "catalogo" });
-    }
-    if (a === "Sobre Nosotros") {
-      navigate("/SobreNosotros");
-    }
-    if (a === "Contacto") {
-      navigate("/Contacto");
-    }
-  };
   return (
     <>
       {/* DESKTOP */}
@@ -120,7 +99,8 @@ const Header = () => {
             : "top-8 absolute "
         } w-full hidden md:flex z-[100] bg-white justify-between items-center px-40 2xl:px-60 h-20 transition-all ease-in 2s`}
       >
-        <Image src="/logo.png" alt="logo" width={200} height={100} />
+        <Image src="/logo.png" alt="logo" width={200} height={100}
+       />
         <div className="flex gap-4 mr-6">
           <ul className="flex gap-4 text-right text-pike2 cursor-pointer">
             {menunav.map((a) => (

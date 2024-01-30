@@ -1,3 +1,4 @@
+import Image from 'next/image'
 
 export async function generateMetadata
   (props) {
@@ -25,11 +26,12 @@ const Detalle = (props) => {
   return (
     <div>
       <div className="md:w-[85vw] md:h-[80vh] md:px-10 md:py-10 md:justify-center md:items-center flex md:flex-row flex-col mx-auto pt-[10vh] md:pt-0">
-        <img
+        <Image
           className=" w-full h-[80vh] items-center mx-auto object-contain"
           src={detalle && detalle[0].img}
           width={300}
           height={500}
+          alt='producto' 
         />
         <div className="w-full h-full flex flex-col items-center justify-center rounded-lg  p-4   ">
           <div className="bg-gray-100 shadow-lg p-4 ">

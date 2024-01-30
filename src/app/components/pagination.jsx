@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import React from 'react'
 
 const Pagination = ({ totalPosts, postsPerPage, setCurrentPage, currentPage }) => {
@@ -11,7 +10,7 @@ const Pagination = ({ totalPosts, postsPerPage, setCurrentPage, currentPage }) =
     <div className='w-full text-center flex gap-5 justify-end pt-10 pb-20'>
         {
             pages.map((page, index) => {
-              return <button onClick={() => setCurrentPage(page)} className={`${currentPage === page ? 'text-white bg-pike3' : 'text-booty bg-white border-2 border-booty'} w-8 h-8  rounded-full`} key={index}>{page}</button>
+              return <button key={index} onClick={() => setCurrentPage(page)} className={`${currentPage === page ? 'text-white bg-pike3' : 'text-booty bg-white border-2 border-booty'} w-8 h-8  rounded-full`} >{page}</button>
             })
         }
     </div>

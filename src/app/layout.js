@@ -19,20 +19,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Header />
-      <Navbar />
-     {/*  <div className="z-[1000] fixed">
-          <WhatsAppWidget
-            className="z-[10000]"
-            phoneNumber="+59898412760"
-            sendButton="Enviar"
-            message="Hola! 👋🏼 En que te podemos ayudar?"
-            replyTimeText="Suele responder dentro de 1 hora"
-            companyName="5 estrellas"
-          />
-        </div> */}
-      <body className="p-10 mt-24 h-full bg-white">{children}</body>
-      <Footer />
+      <body className="mt-24 pt-10 h-full bg-white">
+        <Header />
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

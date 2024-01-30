@@ -7,6 +7,7 @@ import Pagination from "./pagination";
 import { useRouter } from 'next/navigation';
 import { useStateValue } from "../context/StateProvider";
 import Image from 'next/image'
+
 const Products = ({ products, currentPage, postsPerPage, setCurrentPage }) => {
     const router = useRouter();
   const [images, setImages] = React.useState([]);
@@ -50,6 +51,7 @@ const Products = ({ products, currentPage, postsPerPage, setCurrentPage }) => {
                 src={a.img}
                 width={300}
                 height={500}
+                alt='logo' 
                 className=" px-4 object-contain md:object-contain 2xl:object-contain w-full "
               />
               <div className="md:px-5 px-10">

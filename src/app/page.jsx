@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+
 import { IoIosConstruct } from "react-icons/io";
 import {
   AiFillHome,
@@ -12,18 +12,17 @@ import { GiFactory, GiClothes, GiCoinsPile } from "react-icons/gi";
 import { BsFillMusicPlayerFill, BsTruck } from "react-icons/bs";
 import { FaBaby, FaTruck } from "react-icons/fa";
 import Pagination from "./components/pagination";
-import { useStateValue } from "./context/StateProvider";
-import { useRouter } from "next/router";
 import Products from "./components/products";
+import Image from 'next/image'
+import { useState } from "react";
 
-const page = () => {
-  const [categories2, setCategories2] = React.useState();
+const Page = () => {
   const products = require("./components/products.json");
 
-  const [products2, setProducts2] = React.useState(products);
-  const [price, setPrice] = React.useState();
-  const [select, setSelect] = React.useState();
-  const [modal, setModal] = React.useState(false);
+  const [products2, setProducts2] = useState(products);
+  const [price, setPrice] = useState();
+  const [select, setSelect] = useState();
+  const [modal, setModal] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(8);
   const lastPostIndex = currentPage * postsPerPage;
@@ -37,8 +36,7 @@ const page = () => {
 
   const categories = require("./components/categorias.json");
 
-  const [showModal, setShowModal] = React.useState(false);
-  const [first, setfirst] = useState(0);
+  const [showModal, setShowModal] = useState(false);
 
   const banners = [
     {
@@ -55,7 +53,7 @@ const page = () => {
     },
   ];
 
-  const catref = React.useRef();
+
 
   const iconos = (e) => {
     if (e === "Industrias y Oficinas") {
@@ -111,13 +109,13 @@ const page = () => {
               <div className="relative w-auto my-6 mx-auto">
                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-[30vw] bg-white outline-none focus:outline-none">
                   <div className="relative p-0 flex-auto">
-                    <img
+                    <Image
                       className="w-full h-[200px] rounded-t-lg object-cover"
                       src={banner}
                       width="200"
                       height="267"
                       alt="me"
-                    ></img>
+                    ></Image>
                     <div>
                       <h1 className="font-bold text-pike text-center mt-4">
                         ¿Necesitas comprar al por mayor?
@@ -251,7 +249,7 @@ const page = () => {
       <div className=" md:flex w-full items-center bg-pike2 rounded-t-lg justify-between ">
         <div className="w-full flex justify-between items-center">
           <div
-            ref={catref}
+           
             className="flex p-4 box-border box-none font-bold text-pike3"
           >
             Catálogo
@@ -299,6 +297,7 @@ const page = () => {
               categories.map((a) => (
                 <li
                   onClick={() => cambiar(a.name)}
+                  key={a.name}
                   className={`${
                     select === a.name
                       ? "bg-pike text-white"
@@ -332,6 +331,7 @@ const page = () => {
             {categories &&
               categories.map((a) => (
                 <li
+                key={a.name}
                   onClick={() => cambiar(a.name)}
                   className={`${
                     select === a.name
@@ -361,4 +361,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
