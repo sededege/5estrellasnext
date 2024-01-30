@@ -1,14 +1,20 @@
 import Image from 'next/image'
 
+function convertToSlug(text) {
+  return text
+    .toLowerCase()
+    .replace(/[^\w\s]/g, '')
+    .replace(/\s+/g, '-')
+    .trim();
+}
+
 export async function generateMetadata
   (props) {
-  // read route params
   const {id} = props.params
   const productsjson = require("../../components/products.json");
-  const detalle = productsjson.filter((a) => a.id === parseInt(id));
-  const title = detalle ? `5 Estrellas - ${detalle[0].title}` : "5 Estrellas";
+  const detalle = productsjson.filter((a) => convertToSlug(a.title) === id);
+  const title = detalle ? `5 Estrellas - ${detalle[0]?.title}` : "5 Estrellas";
   const desc = detalle ? `${detalle[0].descripcion}` : "5 Estrellas";
-  // optionally access and extend (rather than replace) parent metadata
  
   return {
     title: title,
@@ -17,11 +23,12 @@ export async function generateMetadata
 }
 
 const Detalle = (props) => {
-
+  
   const { id } = props.params;
+
   const productsjson = require("../../components/products.json");
-  const detalle = productsjson.filter((a) => a.id === parseInt(id));
-  const title = detalle ? `5 Estrellas - ${detalle[0].title}` : "5 Estrellas";
+  const detalle = productsjson.filter((a) => convertToSlug(a.title) === id);
+  const title = detalle ? `5 Estrellas - ${detalle[0]?.title}` : "5 Estrellas";
 
   return (
     <div>

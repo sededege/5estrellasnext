@@ -47,7 +47,7 @@ const Products = ({ products, currentPage, postsPerPage, setCurrentPage }) => {
               className="md:px-0 h-full shadow-md hover:shadow-2xl transition-all 1s ease-in rounded-lg cursor-pointer bg-white "
             >
               <Image
-                onClick={() => router.push(`/detalle/${a.id}`)}
+                onClick={() => router.push(`/producto/${convertToSlug(a.title)}`)}
                 src={a.img}
                 width={300}
                 height={500}
