@@ -15,6 +15,7 @@ import Pagination from "./components/pagination";
 import Products from "./components/products";
 import Image from 'next/image'
 import { useState } from "react";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 const Page = () => {
   const products = require("./components/products.json");
@@ -227,6 +228,9 @@ const Page = () => {
 
   return (
     <div className="flex flex-col md:px-40 2xl:px-60 px-4 ">
+            <FloatingWhatsApp placeholder='Ingresa un mensaje' chatMessage='Hola! ¿En que podemos ayudarte?' statusMessage='Habitualmente responde en 15 minutos.' avatar='./logoblanco.png' accountName="5 Estrellas" phoneNumber="+59898412760"/>
+            
+
       {/*     <div className="md:px-[400px]">
         <ul className="flex gap-4  ">
           {banners &&
