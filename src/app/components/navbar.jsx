@@ -99,7 +99,7 @@ const Header = () => {
             : "top-8 absolute "
         } w-full hidden md:flex z-[100] bg-white justify-between items-center px-40 2xl:px-60 h-20 transition-all ease-in 2s`}
       >
-        <Image src="/logo.png" alt="logo" width={200} height={100}
+        <Image src="/logo.png" alt="logo" width={40} height={100}
        />
         <div className="flex gap-4 mr-6">
           <ul className="flex gap-4 text-right text-pike2 cursor-pointer">
@@ -131,9 +131,9 @@ const Header = () => {
         <Image
           src="/logo.png"
           alt="logo"
-          width={180}
+          width={40}
           height={60}
-          className="relative right-2"
+          className="relative"
         />
 
         {menuopen && <Burgermenu />}

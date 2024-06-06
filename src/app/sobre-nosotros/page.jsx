@@ -11,7 +11,7 @@ const About = () => {
   };
   return (
     <div className="w-full md:pt-0 pt-[10vh] md:px-[15vw] px-8 text-center text-gray-500  flex flex-col gap-4 pb-20 md:h-[90vh] 2xl:h-[70vh] items-center">
-      <Image width={600} height={100}  className="mx-auto" src='/logo.png' alt="logo" />
+      <Image width={200} height={100}  className="mx-auto" src='/logo.png' alt="logo" />
       <div className="flex md:flex-row flex-col gap-1 md:gap-4">
         <Card
           title="Quienes somos"

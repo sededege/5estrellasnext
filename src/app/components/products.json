@@ -7,7 +7,8 @@
     "medidas": "70 cm x 55 cm",
     "material": "100% algodón vírgen blanco.",
     "cat": "Paños de Piso",
-    "cod": "7730992600188"
+    "cod": "7730992600188",
+    "price": "0"
   },
   {
     "id": 1,
@@ -17,7 +18,8 @@
     "medidas": "65 cm x 55 cm",
     "material": "100% algodón vírgen blanco.",
     "cat": "Paños de Piso",
-    "cod": "7730992600188"
+    "cod": "7730992600188",
+    "price": "42.9"
   },
   {
     "id": 2,
@@ -27,7 +29,8 @@
     "medidas": "40 cm x 32 cm",
     "material": "100% algodón vírgen blanco.",
     "cat": "Paños de Piso",
-    "cod": "7730992600188"
+    "cod": "7730992600188",
+    "price": "21"
   },
   {
     "id": 3,
@@ -37,7 +40,8 @@
     "medidas": "50 cm x 48 cm",
     "material": "100% algodón vírgen blanco.",
     "cat": "Paños de Piso",
-    "cod": "7730992600188"
+    "cod": "7730992600188",
+    "price": "30.85"
   },
   {
     "id": 4,

@@ -249,8 +249,11 @@ const Page = () => {
             ))}
         </ul>
       </div> */}
- 
+  <video width="1500" height="500" loop muted autoPlay>
+        <source src="/video.mp4" type="video/mp4" />
+      </video>
       <div className=" md:flex w-full items-center bg-pike2 rounded-t-lg justify-between ">
+     
         <div className="w-full flex justify-between items-center">
           <div
            
@@ -368,7 +371,9 @@ const Page = () => {
         setCurrentPage={setCurrentPage}
         currentPage={currentPage}
       />
-    </div>
+
+{/*       <h1>Confían en nosotros</h1>
+ */}    </div>
   );
 };
 
